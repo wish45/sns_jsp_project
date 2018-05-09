@@ -1,1 +1,1 @@
-# sns_jsp_project
+mvc1 pattern jsp sns project

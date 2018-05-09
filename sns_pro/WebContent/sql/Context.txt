@@ -1,0 +1,21 @@
+server > tomcat v8.0 Server...> context.xml 파일을 열어서
+</Context> 위쪽에 복사 붙여넣기
+
+<Resource name="jdbc/mysql" auth="Container" 
+			type="javax.sql.DataSource"
+			driverClassName="com.mysql.jdbc.Driver"
+			url="jdbc:mysql://localhost/sns"
+			username="root" password="mysql"
+			maxActive="5" maxIdle="3" />
+			
+			
+<Resource name="jdbc/mysql"
+    	auth="Container"
+    	type="javax.sql.DataSource"
+    	maxTotal="100"
+    	maxIdle="30"
+    	maxWaitMillis="10000"
+    	username="root"
+    	password="1234"
+    	driverClassName="com.mysql.jdbc.Driver"
+    	url="jdbc:mysql://localhost/sns"/>			
